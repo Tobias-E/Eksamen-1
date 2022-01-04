@@ -1,0 +1,639 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#456150;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Style til header */
+.logo{
+    width: 80px;
+}
+.navbar-backgroundcolor{
+    background-color: rgba(255, 255, 255, 0.479)!important;
+    
+}
+
+.navbar-font{   
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 20px;
+    text-decoration: none;
+    padding-right: 50px;
+}
+
+.navbar a{
+    color: black !important; 
+}
+
+.navbar a:hover{
+    color: white !important
+}
+
+.navbar-font a{
+    margin-left: 80px !important
+}
+
+
+/* Style af footer */
+.foot{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.479);
+    justify-content: space-between;
+    padding: 15px;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+
+.foot h3{
+    font-weight: lighter;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.footersome i{
+    color: black;
+    font-size: 25px;
+    padding-left: 20px;
+    transition: 0.5s;
+}
+.footersome i:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+
+/* Gøre header og footer responsive */
+@media screen and (min-width: 992px){
+    .navbar-fix{
+        display: flex;
+        justify-content: end;
+    }
+    .foot{
+        display: flex;
+    }
+}
+
+/* Style af gennemgående komponenter */ 
+.return{
+    display: flex; 
+    justify-content:left;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.return i{
+    color: rgba(255, 255, 255, 0.671);
+}
+
+.return i:hover{
+    color: rgba(255, 255, 255, 0.342);
+}
+
+.portfolio{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+}
+
+.work{
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    color: white;
+}
+
+.vaerker{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+}
+
+.year{
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 25px;
+    color: white;
+}
+
+/* Style til siden: FORSIDE */
+
+.forsidebillede{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 469px;
+    margin-top: -100px;
+}
+
+@media screen and (min-width: 992px){
+    .forsidebillede{
+        display: flex;
+    }
+    
+}
+
+.navn{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.navn h1{
+    display: block;
+    justify-content: center;
+    color: white;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.forsidebtn{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.479);
+    border: 2px solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    border: none;
+}
+
+.forsidebtn a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.forsidebtn a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 765px){
+    .genvej{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .genvej{
+        width: 350px;
+        display: block;
+        justify-content: center;
+    }
+    
+}
+
+.forsidevideo{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+    margin-top: 50px;
+}
+
+
+
+/* Style af siderne under: FOTOGRAFI */
+.images1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.images1 img{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.images1 img:hover{
+    width: 1000px;
+    height: 700px;
+}
+
+.images2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.images2 img{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.images2 img:hover{
+    width: 1000px;
+    height: 700px;
+}
+
+.images3{
+    display: flex;
+    justify-content: space-around;
+}
+
+.images3 img{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.images3 img:hover{
+    width: 1000px;
+    height: 700px;
+}
+
+.images4{
+    display: flex;
+    justify-content: space-around;
+}
+
+.images4 img{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    padding: 5px;
+}
+
+.images4 img:hover{
+    width: 8000px;
+    height: 500px;
+}
+
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: block !important;
+}
+
+
+/* Style af siden: VIDEO */
+.video{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.videotekst{
+    padding-left: 25%;
+}
+.videotekst h2{
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+}
+.videotekst h4{
+    font-size: 15px;
+    font-weight: lighter;
+    color: white;
+}
+
+.stordiv{
+    margin-bottom: 150px;
+}
+
+/* Style til siden: OM MIG */
+.mig{
+    padding: 20px;
+}
+
+.mig h2{
+    display: flex;
+    justify-content: left;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    margin-top: 30px;
+}
+
+.mig p{
+    font-weight: 400;
+    color: black;
+}
+
+.mig span{
+    color: white;
+}
+
+.me{
+    width: 550px;
+    height: 571.5px;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.479);
+    margin-top:67px;
+}
+
+.about{
+    width: 550px;
+    font-size: 18px;
+    line-height: 1.7em;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.479);
+}
+
+.about img{
+    width: 60px;
+    height:auto;
+    padding: 3px;
+    margin-bottom: 16.5px;
+}
+
+.last p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ombtn{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.479);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    border: none;
+}
+
+.ombtn a{
+    color: white;
+    text-decoration: none;
+}
+
+.ombtn a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (min-width:727px) {
+    .mig{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .last{
+        display: block;
+        justify-content: center;
+    }
+    
+}
+
+
+/* Style af siderne til: FLOW 1, FLOW 2, FLOW 3, FLOW 4 OG FLOW 5 */
+.textbox1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+.beskrivelse{
+    width: 850px;
+    font-size: 18px;
+    line-height: 2em;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:rgba(255, 255, 255, 0.479);
+    margin-bottom: 10px;
+    color: black;
+}
+
+.beskrivelse h3{
+    font-weight: 300;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    color: black;
+}
+
+.textbox2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.beskrivelse2{
+    width: 850px;
+    font-size: 18px;
+    line-height: 2em;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:rgba(255, 255, 255, 0.479);
+    margin-bottom: 10px;
+    color: black;
+}
+
+.beskrivelse2 h3{
+    font-weight: 300;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    color: black;
+}
+
+.flow1btn{
+    background-color:#456150;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.flow1btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.flow1btn:hover{
+    color: black;
+    text-decoration: none;
+    background-color: #4561509d;
+}
+
+
+
+/* Style til alle CARDS*/
+.row-cols-md-3 { 
+    min-height: 200px;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 150px ;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.row-cols-md-3 { 
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    background-color:rgba(255, 255, 255, 0.479);
+    color: white;
+}
+
+.card img{
+    height: 300px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #456150; 
+    border:none;
+    color: white;
+}
+
+.card-body a:hover{
+    background-color: #4561509d;
+}
+
+
+/* Style til alle CAROUSELS*/
+#carouselExampleCaptions{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
+    width: 1000px;
+}
+
+#carouselExampleIndicators{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
+    width: 550px;
+}
+
+
+/* Style til siden: KONTAKT*/
+
+@media screen and(min-width: 375px) {
+    .contact{
+        width: 100%;
+    }
+    
+}
+
+.velkommen {
+    font-weight: lighter;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 30px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.velkommen span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form .email{
+    background-color: rgba(255, 255, 255, 0.479);
+    border-radius: 5px;
+    border: 2px rgba(255, 255, 255, 0.479);
+    padding: 5px;
+    width: 500px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form .besked{
+    background-color: rgba(255, 255, 255, 0.479);
+    border-radius: 5px;
+    border: 10px rgba(255, 255, 255, 0.479);
+    padding: 5px;
+    width: 500px;
+    height: 400px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form .send{
+    background-color: rgba(255, 255, 255, 0.479);
+    border-radius: 5px;
+    border: 10px rgba(255, 255, 255, 0.479);
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.486);
+}
+
+
+.somedier h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    font-weight: 200;
+    color: white;
+    
+}
+
+.some1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 37.5%;
+    margin-right: 37.5%;
+}
+
+.some1 a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.some1 i{
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.some1 a:hover{
+    color: rgba(255, 255, 255, 0.479);
+    transition: 0.5s;
+}
+
+.location{ 
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+
+
